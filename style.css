@@ -17,8 +17,7 @@ body {
   padding: 20px 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 100%;
-} /* define a cor de fundo do "contêiner/cartão" da lista, definindo uma distância entre o conteúdo e a borda do mesmo, arredonda as quinas, define sombra e define que o cartão ocupará a largura máxima. */
+} /* define a cor de fundo do "contêiner/cartão" da lista, definindo uma distância entre o conteúdo e a borda do mesmo, arredonda as quinas e define sombra. */
 
 h1 {
   text-align: center;
