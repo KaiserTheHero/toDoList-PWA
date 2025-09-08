@@ -10,14 +10,18 @@ body {
   padding: 20px;
   justify-content: center;
   height: 100%;
-} /* define a cor de fundo, o padding, define que a altura usada vai ser a maior possivel e organiza os elementos da página horizontalmente de forma apropriada, centralizando-os. */
+  width: 100%;
+
+} /* define a cor de fundo, o padding, define que a altura e a largura usadas vão ser as maiores possíveis e organiza os elementos da página horizontalmente de forma apropriada, centralizando-os. */
 
 .container {
   background-color: #fff;
   padding: 20px 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-} /* define a cor de fundo do "contêiner/cartão" da lista, definindo uma distância entre o conteúdo e a borda do mesmo, arredonda as quinas e define sombra. */
+  height: 100%;
+  width: 100%;
+} /* define a cor de fundo do "contêiner/cartão" da lista, definindo uma distância entre o conteúdo e a borda do mesmo, arredonda as quinas e define sombra, além de definir que a largura e altura serão os maiores possíveis. */
 
 h1 {
   text-align: center;
