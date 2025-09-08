@@ -8,9 +8,9 @@
 body {
   background-color: #616364;
   padding: 20px;
-  display: flex;
   justify-content: center;
-} /* define a cor de fundo, o padding, e organiza os elementos da página horizontalmente de forma apropriada, centralizando-os. */
+  height: 100%;
+} /* define a cor de fundo, o padding, define que a altura usada vai ser a maior possivel e organiza os elementos da página horizontalmente de forma apropriada, centralizando-os. */
 
 .container {
   background-color: #fff;
