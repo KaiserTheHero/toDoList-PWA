@@ -18,8 +18,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 400px;
-} /* define a cor de fundo do "contêiner/cartão" da lista, definindo uma distância entre o conteúdo e a borda do mesmo, arredonda as quinas, define sombra e define que o cartão ocupará a largura máxima, mas com limite de 400px. */
+} /* define a cor de fundo do "contêiner/cartão" da lista, definindo uma distância entre o conteúdo e a borda do mesmo, arredonda as quinas, define sombra e define que o cartão ocupará a largura máxima. */
 
 h1 {
   text-align: center;
