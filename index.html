@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>PWA - Lista de Tarefas</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <h1>Lista de Afazeres</h1>
+  <form id="form">
+    <input id="tarefa" placeholder="Digite a tarefa..." required/>
+    <button>Adicionar</button>
+  </form>
+  <ul id="lista"></ul>
+  </div>
+  </body>
+  <script src="toDoList.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</html>

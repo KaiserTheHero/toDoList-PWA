@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+} /* faz com que padding e border se apliquem, na altura e largura dos elementos, para tudo na página, sem margens ou espaçamentos padrões, definindo também a fonte. */
+
+body {
+  background-color: #616364;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+} /* define a cor de fundo, o padding, e organiza os elementos da página horizontalmente de forma apropriada, centralizando-os. */
+
+.container {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+} /* define a cor de fundo do "contêiner/cartão" da lista, definindo uma distância entre o conteúdo e a borda do mesmo, arredonda as quinas, define sombra e define que o cartão ocupará a largura máxima, mas com limite de 400px. */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #945ca1;
+} /* centraliza o título, criando espaçamento entre o mesmo e o resto do formulário, além de dar cor. */
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+} /* alinha o input e o botão, com distância de 10 pixels entre os mesmos, além de um espaço abaixo. */
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+} /* faz com que o input ocupe o máximo de espaço possível, mas mantendo espaço para o botão, também deixando o input arredondado com padding e border-radius. */
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0ee93d;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+} /* define como o cursor fica ao passar sobre o botão, além de dar cor, bordas arredondadas e tipo de fonte para o mesmo. */
+
+button:hover {
+  background-color: #0284c7;
+} /* muda a cor do botão quando o mouse passa por cima. */
+
+ul {
+  list-style: none;
+} /* remove os marcadores que a lista tem por padrão. */
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+} /* faz com que os itens da lista, individualmente, centralizem-se verticalmente e separem-se dos outros elementos (por serem flex containers). também faz com que haja espaçamento interno e entre as tarefas, estilizando as mesmas. */
+
+li span {
+  flex: 1;
+  margin-left: 10px;
+} /* o texto da tarefa ocupará todo o espaço restante e jogará o botão para a direita. */
+
+li button {
+  background-color: #e11d48;
+  padding: 5px 8px;
+  font-size: 12px;
+} /* faz com que o botão de remoção de tarefas fique vermelho. */
+
+li button:hover {
+  background-color: #be123c;
+} /* faz com que o botão de remover tarefa fique ainda mais vermelho. */
