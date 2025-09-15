@@ -1,5 +1,5 @@
 const CACHE = "pwa-tarefas";
-const FILES = ["/pwa-listaDeTarefas", "/pwa-listaDeTarefas/index.html", "/pwa-listaDeTarefas/toDoList.js", "/pwa-listaDeTarefas/manifest.json"];
+const FILES = ["/toDoList-PWA", "/toDoList-PWA/index.html", "/toDoList-PWA/toDoList.js", "/toDoList-PWA/manifest.json"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)));
 });
