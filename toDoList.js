@@ -29,10 +29,10 @@ function render() {
     };
     //cria um elemento, definindo como checkbox e definindo que está marcado se a tarefa é marcada como feita pelo usuário e, também, define que é desmarcada se o usuário mandar.
 
-    const prompt = document.createElement("prompt");
-    prompt.textContent = t.texto;
-    if (t.feita) prompt.style.textDecoration = "line-through";
-    //cria a constant "prompt", que recebe o valor do texto da tarefa e, caso esta esteja marcada como concluída, risca o texto no meio.
+    const span = document.createElement("span");
+    span.textContent = t.texto;
+    if (t.feita) span.style.textDecoration = "line-through";
+    //cria a constant "span", que recebe o valor do texto da tarefa e, caso esta esteja marcada como concluída, risca o texto no meio.
 
     const btn = document.createElement("button");
     btn.textContent = "X";
@@ -43,10 +43,10 @@ function render() {
     };
     //cria um botão, com o texto sendo um X. ao ser clicado, remove a tarefa de acordo com o índice (mencionado anteriormente na função de render).
 
-    li.append(chk, prompt, btn);
+    li.append(chk, span, btn);
     lista.appendChild(li);
   });
-  //cria uma lista com as constantes mencionadas anteriormente (botão, checkbox e prompt), colocando-a dentro da ul ("lista").
+  //cria uma lista com as constantes mencionadas anteriormente (botão, checkbox e span), colocando-a dentro da ul ("lista").
 }
 
 form.onsubmit = (e) => {
